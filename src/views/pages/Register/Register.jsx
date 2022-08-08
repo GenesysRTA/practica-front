@@ -3,7 +3,6 @@ import { Button, Form } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import FetchApi from '../../../libs/FetchApi';
 import store from '../../../state/store';
-import classes from './Register.module.scss';
 
 const Register = () => {
 	const {
@@ -92,7 +91,9 @@ const Register = () => {
 
 		const res = await FetchApi.create('/register', payload);
 
-		navigate('/verify-email');
+		if (!res.isError) {
+			navigate('/verify-email');
+		}
 	};
 
 	return (

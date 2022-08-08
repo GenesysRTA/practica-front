@@ -1,0 +1,44 @@
+.action {
+	width: 100%;
+	padding-bottom: 50px;
+	justify-content: center;
+	display: flex;
+	background: #add8e6;
+}
+img {
+	margin-top: 10px;
+	height: 300px;
+	width: 300px;
+	padding-bottom: 25px;
+}
+.action .profile .menu {
+	background: #fff;
+	border-radius: 15px;
+	padding: 5px 20px;
+}
+h3 {
+	text-align: center;
+	font-size: 30px;
+}
+
+h3 span {
+	font-size: 20px;
+	color: #555;
+}
+
+.action .profile .menu ul li {
+	list-style: none;
+	padding: 10px 0;
+	display: flex;
+}
+
+.action .profile .menu ul li:nth-child(n + 2) {
+	margin-left: -30px;
+	display: block;
+	text-align: center;
+}
+
+.action .profile .menu ul li .center a {
+	text-decoration: none;
+	color: #0047ab;
+}
